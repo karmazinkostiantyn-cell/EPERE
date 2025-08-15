@@ -299,7 +299,7 @@ header img {
 }
 
 .contacts {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     @media (width <= 60rem) {
         grid-template-columns: 1fr 1fr;
     }
@@ -316,6 +316,15 @@ header img {
 
     align-items: center;
 
+}
+
+.contacts-title {
+    font-size: 2.3rem;
+    text-align: center;
+    grid-column: 1 / span 5;
+    @media (width <= 60rem) {
+        grid-column: 1 / span 2;
+    }
 }
 
 .partners a, .contacts a{
@@ -336,7 +345,7 @@ header img {
 .partners-top-contacts {
     text-align: center;
 
-    grid-column: 1 / span 4;
+    grid-column: 1 / span 5;
     
     @media (width <= 60rem) {
         grid-column: 1 / span 2;
@@ -347,6 +356,14 @@ header img {
     margin: auto;
     width: 100%;
     height: auto;
+}
+
+.start-column4 {
+    grid-column-start: 4;
+    
+    @media (width <= 60rem) {
+        grid-column-start: 2;
+    }
 }
 
 .start-column3 {
@@ -522,11 +539,6 @@ footer, .partners, .info, .contacts {
 
 /*#region contacts*/
 
-
-#cards {
-    row-gap: 3.5rem;
-}
-
 .card input {
     background-color: rgb(93, 189, 222);
     border: none;
@@ -558,6 +570,15 @@ footer, .partners, .info, .contacts {
     height: auto;
     
     border-radius: 2rem;
+}
+
+.mobile-span2 {
+    @media (width <= 60rem) {
+        grid-column: span 2;
+        width: 50%;
+        height: auto;
+        margin: auto;
+    }
 }
 /*#endregion*/
 
